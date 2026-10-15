@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Eric Hedengren</title>
+    <meta
+      name="description"
+      content="Eric Hedengren builds software for physical systems. Mechanical engineering student at BYU. Portfolio for coding and engineering roles."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400&family=Newsreader:opsz,wght@6..72,450;6..72,550&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect fill='%231c1916' width='32' height='32'/%3E%3Ctext x='16' y='22' text-anchor='middle' fill='%23f2efe8' font-family='Georgia' font-size='14'%3EEH%3C/text%3E%3C/svg%3E" />
+  </head>
+  <body>
+    <a class="skip" href="#work">Skip to work</a>
+    <header class="site-header">
+      <p class="site-name">Eric Hedengren</p>
+      <nav class="site-nav" aria-label="Contact">
+        <a href="mailto:eric.john.hedengren@gmail.com">Email</a>
+        <a href="https://linkedin.com/in/eric-hedengren">LinkedIn</a>
+        <a href="https://github.com/eric-hedengren">GitHub</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="intro">
+        <p class="kicker">Mechanical engineering and software</p>
+        <h1>I build software for hardware, plants, and labs.</h1>
+        <p>
+          The useful version usually starts with someone doing a slow job by
+          hand. I'm a mechanical engineering student at BYU, and I stay with
+          the work until the people who own the problem can change it
+          themselves.
+        </p>
+      </section>
+
+      <section id="work" class="work" aria-labelledby="work-heading">
+        <h2 id="work-heading">Selected work</h2>
+
+        <article class="piece">
+          <div class="piece-meta">
+            <p class="org">Tesla</p>
+            <p>Gulf Coast Lithium Refinery</p>
+            <p>May 2026 to present</p>
+            <p class="role">Agentic engineer intern</p>
+          </div>
+          <div class="piece-body">
+            <h3>Tools the plant can change</h3>
+            <p>
+              People were signing into several systems, pulling partial data,
+              and combining it by hand. I built read-only gateways and four
+              skills so an agent could reach six plant systems in plain
+              English. That work shipped across 20+ repositories in about four
+              months.
+            </p>
+            <p>
+              I wrote a 10-page screenshot guide and held office hours so
+              operators and engineers could ship their own tools. More than 10
+              non-developers put production apps into daily use, including a
+              scheduler used by about 105 people. On a five-day build I also
+              wrote a model validator and a Python controller for a process
+              model.
+            </p>
+            <p class="limit">
+              The plant code stays at Tesla. The path was: find the manual
+              step, put a read-only gateway on the data, write the skill in
+              plain English, then sit with the person until they ship.
+            </p>
+          </div>
+        </article>
+
+        <article class="piece">
+          <div class="piece-meta">
+            <p class="org">Alpha Peak</p>
+            <p>May 2025 to Aug 2025</p>
+            <p class="role">Software engineer</p>
+          </div>
+          <div class="piece-body">
+            <h3>Running form from a phone video</h3>
+            <p>
+              We estimated body position from ordinary smartphone video. The
+              codebase was hard to change, and a sponsor deadline was already
+              set. On a four-person team I refactored 65.5% of the functions,
+              cut the code volume 21%, and doubled how often we could deploy a
+              feature.
+            </p>
+            <p class="limit">
+              I didn't train the vision model. I built the software around it,
+              then checked the output before each deploy. That repository stays
+              with Alpha Peak. The pipeline was video in, pose estimate,
+              metrics out, tests before ship.
+            </p>
+          </div>
+        </article>
+
+        <article class="piece">
+          <div class="piece-meta">
+            <p class="org">Astro Technology</p>
+            <p>Jun 2020 to Nov 2020</p>
+            <p class="role">Engineering intern</p>
+          </div>
+          <div class="piece-body">
+            <h3>Tide data and live strain</h3>
+            <p>
+              Senior engineers spent six hours compiling one year of tide data
+              so they could calibrate fiber-optic strain gauges. I wrote a
+              Python pipeline that turned 30 years of records into a usable
+              file in three seconds.
+            </p>
+            <p>
+              I also wrote the software that consolidated 1 kHz and 10 kHz
+              strain streams into one database, so the team could watch the
+              structure during storms.
+            </p>
+            <p class="links">
+              <a href="https://github.com/eric-hedengren/tide-data-web-scraping">Tide pipeline</a>
+              <a href="https://github.com/eric-hedengren/database-peak-streaming">Strain database</a>
+            </p>
+          </div>
+        </article>
+
+        <article class="piece">
+          <div class="piece-meta">
+            <p class="org">BYU Temperature Control Lab</p>
+            <p>Jul 2023 to Aug 2023</p>
+            <p class="role">Courseware</p>
+          </div>
+          <div class="piece-body">
+            <h3>A lab you open in the browser</h3>
+            <p>
+              Students had to install Python before they could use the lab
+              hardware. I built a JavaScript page and a WebSocket bridge so a
+              30-person lab could reach Arduino sensors from the browser. Setup
+              time dropped about 83%.
+            </p>
+            <p>
+              Earlier, for the same hardware, I wrote 12 interactive Python
+              lessons. That course has been used by tens of thousands of
+              learners.
+            </p>
+            <p class="links">
+              <a href="https://github.com/eric-hedengren/tclab-web-demo">Web demo</a>
+              <a href="https://github.com/eric-hedengren/learn-python-tclab">Python lessons</a>
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <section class="about" aria-labelledby="about-heading">
+        <h2 id="about-heading">Now</h2>
+        <p>
+          B.S. in Mechanical Engineering at Brigham Young University, minor in
+          Physics, graduating December 2028. I started in computer engineering.
+        </p>
+        <p>
+          <a href="mailto:eric.john.hedengren@gmail.com">eric.john.hedengren@gmail.com</a>
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
